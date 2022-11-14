@@ -16,4 +16,4 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - run: |
-          shopt -s globstar && DJANGO_SETTINGS_MODULE=merchex.settings && pylint --load-plugins pylint_django **/*.py
+          shopt -s globstar && DJANGO_SETTINGS_MODULE=merchex.settings && pylint  --exit-zero --load-plugins pylint_django **/*.py
