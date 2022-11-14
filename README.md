@@ -7,4 +7,4 @@ How to use this project?
 * __git clone__
 * __docker compose up__ (you need the docker daemon running)
 * open a shell attached to django container and apply migrations: __./manage.py migrate__
-* open your fav browser and open localhost: ex: __http://localhost:8000/__
+* open localhost in your fav browser or click here : __http://localhost:8000/__
