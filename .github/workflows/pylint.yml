@@ -1,7 +1,9 @@
-name: pylint_django
-on: push
+name: Pylint_django
+
+on: [push]
+
 jobs:
-  pylint:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
