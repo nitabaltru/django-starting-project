@@ -3,7 +3,12 @@ from django.shortcuts import redirect, render
 from listings.forms import BandForm, ContactUsForm, ListingForm
 from listings.models import Band, Listing
 
-# Create your views here.
+
+def homepage(request):
+    return render(
+        request,
+        "listings/homepage.html",
+    )
 
 
 def band_list(request):
