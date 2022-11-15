@@ -7,8 +7,10 @@ services:
       POSTGRES_DB: postgres
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
+    restart: always
   web:
     build: ./merchex
+    command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - ./merchex:/code
     ports:
